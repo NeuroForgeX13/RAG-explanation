@@ -1,0 +1,37 @@
+RAG (Retrieval-Augmented Generation) – Complete Concept
+1. 🌟 Real-Life Scenario
+Socho tumne ek AI Tool / Chatbot banaya hai jo sirf tumhari university ki website ke baare mein information provide kare.
+
+Tum chahte ho ke:
+- User university ke admission ke baare mein pooche to AI admission ki information de.
+- User university ki fee ke baare mein pooche to AI fee ki information de.
+- Lekin agar user cricket, politics ya kisi doosre topic ke baare mein pooche to AI uska jawab na de.
+Ab problem ye hai ke normal AI ke paas bohat saari general information hoti hai. Woh university ke topic se bahar bhi jawab de sakta hai.
+
+Solution: RAG (Retrieval-Augmented Generation)
+
+RAG implement karne se AI pehle apne specific knowledge database se relevant information retrieve karta hai, phir us information ki help se answer generate karta hai.
+2. ❓ What is RAG & Why Do We Need It?
+RAG stands for Retrieval-Augmented Generation.
+
+RAG is an AI technique that connects an AI model with an external knowledge source so it can retrieve relevant information and generate answers based on that information.
+
+RAG ke 3 main steps hain:
+1. Retrieval (Information Search)
+- Retrieval ka matlab hai information ko search karna aur retrieve karna.
+- Jab user koi question poochta hai, AI relevant information ko Vector Database se search karta hai.
+- Sirf question se related information retrieve ki jati hai.
+Example: User asks: "What is the admission fee?"
+
+Retrieval admission fee se related information search karega.
+2. Augmentation (Adding Information)
+- Augmentation ka matlab hai retrieved information ko AI ke prompt mein add karna.
+- AI ko user ke question ke saath relevant context bhi provide kiya jata hai.
+- Is se AI ko accurate answer dene mein help milti hai.
+Example: Retrieved information: "Admission fee is Rs. 20,000."
+
+Ab ye information AI ko user ke question ke saath di jayegi.
+3. Generation (Answer Creation)
+- Generation ka matlab hai answer generate karna.
+- AI retrieved information aur user ke question ko understand karke final answer generate karta hai.
+Example: "The university admission fee is Rs. 20,000."
